@@ -85,6 +85,82 @@ html{
     cursor: pointer;
 }
 
+/* HERO SECTION */
+
+#hero{
+    width: 90%;
+    margin: 0 auto;
+    background: url(https://images.unsplash.com/photo-1516617442634-75371039cb3a?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.hero-text h2{
+    color: #EEF14A;
+    font-size: 40px;
+    font-weight: 800;
+    padding-top: 20px;
+}
+
+.hero-text h3{
+    color: #ffff;
+    font-size: 40px;
+    font-weight: 200;
+    padding-top: 10px;
+
+    span{
+        color: hsl(60, 99%, 62%);
+    }
+}
+
+.hero-text p{
+    color: #f6f6fc;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.hero-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    padding-top: 20px;
+    padding-bottom: 50px;
+
+    a{
+        text-decoration: none;
+        color: #ffff;
+    }
+}
+
+.product-btn{
+    background-color: #2563eb;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+
+.sell-btn{
+    padding: 15px 30px;
+    border: 1px solid #EEF14A;
+    border-radius: 10px;
+}
+
+.sell-btn:hover{
+    background-color: hsl(40, 86%, 62%);
+    border: none;
+}
+
+
 @media(max-width: 900px){
     .nav{
         display: none;
@@ -104,5 +180,9 @@ html{
 
     .menu-btn{
         display: block;
+
+        span{
+            font-size: 30px;
+        }
     }
 }

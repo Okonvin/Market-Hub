@@ -30,6 +30,7 @@ html{
     top: 0;
     z-index: 100;
     border-bottom: 1px solid hsl(100, 10%, 50%);
+    background-color: white;
 }
 
 .logo a{
@@ -127,6 +128,7 @@ html{
     color: #f6f6fc;
     font-size: 20px;
     padding-top: 10px;
+    letter-spacing: .5px;
 }
 
 .hero-btn{
@@ -156,8 +158,93 @@ html{
 }
 
 .sell-btn:hover{
-    background-color: hsl(40, 86%, 62%);
+    background-color: #2563eb;
     border: none;
+}
+
+/*  CATEGORY WITH BUTTONS SECTION  */
+.categories{
+    width: 90%;
+    margin: 2em auto;
+}
+
+.inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    background-color: whitesmoke;
+
+    input{
+        padding: 15px;
+        border-radius: 15px;
+        font-size: 20px;
+    }
+
+    button{
+        padding: 15px;
+        border-radius: 15px;
+        font-size: 20px;
+        background-color: #2563eb;
+        cursor: pointer;
+    }
+
+    button:hover{
+        background-color: hsl(210, 83%, 53%);
+        color: white;
+    }
+}
+
+.Category-btn-sec{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Categories-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: .5em;
+
+    p{
+        font-size: 30px;
+    }
+
+    h2{
+        color: #2563eb;
+        font-size: 40px;
+        letter-spacing: 1px;
+    }
+}
+
+.Category-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    gap: 1em;
+    flex-wrap: wrap;
+
+    button{
+        padding: 20px;
+        font-size: 15px;
+        font-weight: 600;
+        background-color: whitesmoke;
+        border-radius: 15px;
+        border: 1px solid #2563eb;
+        cursor: pointer;
+    }
+
+    button:hover, .active{
+        background-color: #2563eb;
+        color: white;
+    }
 }
 
 
@@ -184,5 +271,15 @@ html{
         span{
             font-size: 30px;
         }
+    }
+}
+
+@media (max-width: 600px){
+    .hero-btn{
+        flex-direction: column;
+    }
+
+    .hero-text h2, h3, p{
+        font-size: 35px;
     }
 }

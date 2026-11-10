@@ -9,28 +9,30 @@
 </head>
 <body>
     <header class="header">
-        <div class="logo">
-            <a href="#">M- <span>Hub</span></a>
-        </div>
-        
-        <nav class="nav" id="nav">
-            <a href="#home">Home</a>
-            <a href="#product">Product</a>
-            <a href="#categories">Categories</a>
-            <a href="#sell">Sell Product</a>
-            <a href="#about">About</a>
-        </nav>
+        <div class="header-width">
+            <div class="logo">
+                <a href="#">M- <span>Hub</span></a>
+            </div>
+            
+            <nav class="nav" id="nav">
+                <a href="#home">Home</a>
+                <a href="#product">Product</a>
+                <a href="#categories">Categories</a>
+                <a href="#sell">Sell Product</a>
+                <a href="#about">About</a>
+            </nav>
 
-        <div class="header-btn" >
-            <button class="cart-btn" id="cartBtn">
-                cart <span id="cartCount">0</span>
-            </button>
+            <div class="header-btn" >
+                <button class="cart-btn" id="cartBtn">
+                    cart <span id="cartCount">0</span>
+                </button>
 
-            <button class="menu-btn" id="menuBtn">
-                <span class="material-symbols-outlined">
-                  menu
-                </span>
-            </button>
+                <button class="menu-btn" id="menuBtn">
+                    <span class="material-symbols-outlined">
+                    menu
+                    </span>
+                </button>
+            </div>
         </div>
     </header>
 
@@ -49,6 +51,7 @@
                 <a href="" class="sell-btn">Sell Your Products</a>
             </div>
         </section>
+        <hr>
 
         <!---------------- CATEGORY WITH BUTTONS SECTION -------------->
         <section class="categories">
@@ -97,7 +100,111 @@
                     </button>
                </div>
             </div>
+           
+        </section>
+         
 
+        <!---------------- PRODUCT DISPLAY SECTION -------------->
+        <section class="product-section" id="products">
+            
+            <div class="product-heading">
+                <h2>Market-Hub Products</h2>
+                <p>Featured Products</p>
+            </div>
+
+            <div class="product-grid">
+                <div 
+                    class="product-card"
+                    data-category="fashion"
+                    data-name="sneaker"
+                >
+                   <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="">
+                        <button>
+                            <img src="/assets/favorite.svg" alt="">
+                        </button>
+                   </div>
+
+                   <div class="product-info">
+                        <h1> FASHION </h1>
+                        <h3> portable Fashioned Sneaker </h3>
+                        <p> Comfortable sneaker suitable for your everyday use </p>
+                   </div>
+
+                   <div class="product-bottom">
+                        <strong>₦50,000</strong>
+                        <button
+                            class="add-to-cart"
+                            data-price="50000"
+                            data-name="sneaker"
+                        > 
+                            Add to cart
+                        </button>
+                   </div>
+                </div>
+
+                <!----------- SECOND PRODUCT  ---------->
+                <div 
+                    class="product-card"
+                    data-category="fashion"
+                    data-name="sneaker"
+                >
+                   <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1777987601471-22def6494460?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="">
+                        <button>
+                            <img src="/assets/favorite.svg" alt="">
+                        </button>
+                   </div>
+
+                   <div class="product-info">
+                        <h1> HUSIEN BISKY </h1>
+                        <h3> Gucci GuG Sneaker </h3>
+                        <p> Comfortable sneaker suitable for your everyday use </p>
+                   </div>
+
+                   <div class="product-bottom">
+                        <strong>₦40,000</strong>
+                        <button
+                            class="add-to-cart"
+                            data-price="40000"
+                            data-name="sneaker"
+                        > 
+                            Add to cart
+                        </button>
+                   </div>
+                </div>
+
+                <!---------- THIRD PRODUCT --------->
+                <div 
+                    class="product-card"
+                    data-category="fashion"
+                    data-name="sneaker"
+                >
+                   <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1600269452121-4f2416e55c28?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="">
+                        <button>
+                            <img src="/assets/favorite.svg" alt="">
+                        </button>
+                   </div>
+
+                   <div class="product-info">
+                        <h1> NIKE </h1>
+                        <h3> Fashioned Nike Sneaker </h3>
+                        <p> Comfortable sneaker suitable for your everyday use </p>
+                   </div>
+
+                   <div class="product-bottom">
+                        <strong>₦60,000</strong>
+                        <button
+                            class="add-to-cart"
+                            data-price="60000"
+                            data-name="sneaker"
+                        > 
+                            Add to cart
+                        </button>
+                   </div>
+                </div>
+            </div>
         </section>
 
     </main>

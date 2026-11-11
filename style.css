@@ -409,6 +409,11 @@ hr{
             font-size: 30px;
         }
     }
+
+    .product-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 600px){
@@ -419,4 +424,19 @@ hr{
     .hero-text h2, h3, p{
         font-size: 35px;
     }
+
+    .product-grid{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product-info{
+        h3{
+            font-size: 30px;
+        }
+
+        p{
+            font-size: 20px;
+        }
+    }    
 }
